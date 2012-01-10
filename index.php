@@ -48,7 +48,7 @@ $channel_url = 'http://royganor.my.phpcloud.com/facebook-login/channel.php';
 	        1. <a href='#account'>Create an account on <?= $product ?></a><br/>
 	        2. <a href='#app'>Create an app on Facebook</a><br/>
 	        3. <a href='#devenv'>Setting up development environment</a><br/>
-	        4. <a href='#deploy'>Develop a sample Facebook app to <?= $product ?></a><br/>
+	        4. <a href='#deploy'>Deploy a sample Facebook app to <?= $product ?></a><br/>
 	        5. <a href='#push'>Push updates to your Facebook app</a><br/>
 	        </div>
        	</div>
@@ -117,7 +117,7 @@ Application facebook-sample-app (id 31) is deployed to ...
        	<div id="paragraph-content">
        		We will begin by grabbing a copy of your app’s sourcecode from Git using the simple command line tool provided by the Zend SDK.<br/><br/>
        		<div id="pre-content">
-		    	<pre style="margin: 0; line-height: 100%">% <b>zend clone project</b> -r https://<i>&lt;container-name&gt;</i>@<i>&lt;container-name&gt;</i>.my.phpcloud.com/git/facebook-sample-app.git<br/><br/>
+		    	<pre style="margin: 0; line-height: 100%">% <b>zend clone project</b> -r https://<i>&lt;container-name&gt;</i>@<i>&lt;container-name&gt;</i>.my.phpcloud.com/git/facebook-sample-app.git<br/>
 Cloning into facebook-sample-app...
 Password:
 remote: Counting objects: 4
@@ -129,7 +129,7 @@ The remote name used to keep track of the phpCloud repository is: phpcloud
 			</div>
 			<br/>
 			Log in using your <?= $product ?> account password.<br/><br/>
-			cd into the directory created by the Zend (git) clone project operation, which will be named as the app (e.g. facebook-sample-app).
+			cd into the directory created by the (git) clone project operation, which is named as the app (e.g. facebook-sample-app).
 			Let’s tweak something small in the app and push it back up to <?= $product ?>.
 			For example, find the line of HTML which shows the title banner (in the app/index.php line 38)<br/><br/>
        		<div id="pre-content">
@@ -142,7 +142,7 @@ The remote name used to keep track of the phpCloud repository is: phpcloud
 			</div><br/>
 	    	Save the file, then use your terminal to commit and push the change:<br/><br/>
        		<div id="pre-content">
-		    	<pre style="margin: 0; line-height: 100%">% <b>zend push application</b>
+		    	<pre style="margin: 0; line-height: 100%">% <b>zend push application</b><br/>
 Password:
 Counting objects:       6
 Finding sources:        100% (6/6)
